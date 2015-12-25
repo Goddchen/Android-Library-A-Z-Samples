@@ -4,10 +4,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/crash"
+    <TextView
+        android:id="@+id/timestamp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/force_crash" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
