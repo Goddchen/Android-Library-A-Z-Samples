@@ -9,6 +9,7 @@ import de.goddchen.android.libraries.model.sample.ACRASample;
 import de.goddchen.android.libraries.model.sample.ButterknifeSample;
 import de.goddchen.android.libraries.model.sample.CommonsIoSample;
 import de.goddchen.android.libraries.model.sample.Dagger2Sample;
+import de.goddchen.android.libraries.model.sample.EventBusSample;
 
 /**
  * Created by Goddchen on 25.12.2015.
@@ -21,6 +22,7 @@ public class Model {
         samples.add(new ButterknifeSample());
         samples.add(new CommonsIoSample());
         samples.add(new Dagger2Sample());
+        samples.add(new EventBusSample());
 
         Collections.sort(samples, new Comparator<Sample>() {
             @Override
