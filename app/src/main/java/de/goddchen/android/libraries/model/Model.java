@@ -11,6 +11,7 @@ import de.goddchen.android.libraries.model.sample.CommonsIoSample;
 import de.goddchen.android.libraries.model.sample.Dagger2Sample;
 import de.goddchen.android.libraries.model.sample.EventBusSample;
 import de.goddchen.android.libraries.model.sample.GsonSample;
+import de.goddchen.android.libraries.model.sample.PicassoSample;
 
 /**
  * Created by Goddchen on 25.12.2015.
@@ -25,6 +26,7 @@ public class Model {
         samples.add(new Dagger2Sample());
         samples.add(new EventBusSample());
         samples.add(new GsonSample());
+        samples.add(new PicassoSample());
 
         Collections.sort(samples, new Comparator<Sample>() {
             @Override
