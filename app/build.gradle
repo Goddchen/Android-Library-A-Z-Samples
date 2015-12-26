@@ -42,4 +42,6 @@ dependencies {
     provided 'org.glassfish:javax.annotation:10.0-b28'
     // EventBus
     compile 'de.greenrobot:eventbus:2.4.0'
+    // Gson
+    compile 'com.google.code.gson:gson:2.5'
 }

@@ -10,6 +10,7 @@ import de.goddchen.android.libraries.model.sample.ButterknifeSample;
 import de.goddchen.android.libraries.model.sample.CommonsIoSample;
 import de.goddchen.android.libraries.model.sample.Dagger2Sample;
 import de.goddchen.android.libraries.model.sample.EventBusSample;
+import de.goddchen.android.libraries.model.sample.GsonSample;
 
 /**
  * Created by Goddchen on 25.12.2015.
@@ -23,6 +24,7 @@ public class Model {
         samples.add(new CommonsIoSample());
         samples.add(new Dagger2Sample());
         samples.add(new EventBusSample());
+        samples.add(new GsonSample());
 
         Collections.sort(samples, new Comparator<Sample>() {
             @Override
