@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     compileSdkVersion 23
@@ -17,6 +18,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    packagingOptions {
+        // needed because Dagger 2 and Butterknife contain this file
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
 }
 
 dependencies {
@@ -25,7 +30,14 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:recyclerview-v7:23.1.1'
     compile 'com.android.support:cardview-v7:23.1.1'
+    //ACRA
     compile 'ch.acra:acra:4.7.0'
+    //Butterknife
     compile 'com.jakewharton:butterknife:7.0.1'
+    // Commons IO
     compile 'commons-io:commons-io:2.4'
+    // Dagger 2
+    compile 'com.google.dagger:dagger:2.0'
+    compile 'com.google.dagger:dagger-compiler:2.0'
+    provided 'org.glassfish:javax.annotation:10.0-b28'
 }
