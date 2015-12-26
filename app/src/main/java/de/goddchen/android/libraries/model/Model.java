@@ -7,6 +7,7 @@ import java.util.List;
 
 import de.goddchen.android.libraries.model.sample.ACRASample;
 import de.goddchen.android.libraries.model.sample.ButterknifeSample;
+import de.goddchen.android.libraries.model.sample.CommonsIoSample;
 
 /**
  * Created by Goddchen on 25.12.2015.
@@ -17,6 +18,8 @@ public class Model {
         List<Sample> samples = new ArrayList<>();
         samples.add(new ACRASample());
         samples.add(new ButterknifeSample());
+        samples.add(new CommonsIoSample());
+
         Collections.sort(samples, new Comparator<Sample>() {
             @Override
             public int compare(Sample sample1, Sample sample2) {
