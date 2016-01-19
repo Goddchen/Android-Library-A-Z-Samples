@@ -11,6 +11,7 @@ import de.goddchen.android.libraries.model.sample.CommonsIoSample;
 import de.goddchen.android.libraries.model.sample.Dagger2Sample;
 import de.goddchen.android.libraries.model.sample.EventBusSample;
 import de.goddchen.android.libraries.model.sample.GsonSample;
+import de.goddchen.android.libraries.model.sample.IonSample;
 import de.goddchen.android.libraries.model.sample.MoshiSample;
 import de.goddchen.android.libraries.model.sample.OttoSample;
 import de.goddchen.android.libraries.model.sample.PicassoSample;
@@ -33,6 +34,7 @@ public class Model {
         samples.add(new MoshiSample());
         samples.add(new OttoSample());
         samples.add(new RetrofitSample());
+        samples.add(new IonSample());
 
         Collections.sort(samples, new Comparator<Sample>() {
             @Override

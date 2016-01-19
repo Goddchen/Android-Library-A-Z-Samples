@@ -52,4 +52,6 @@ dependencies {
     compile 'com.squareup:otto:1.3.8'
     // Retrofit
     compile 'com.squareup.retrofit2:retrofit:2.0.0-beta3'
+    // Ion
+    compile 'com.koushikdutta.ion:ion:2.1.6'
 }
