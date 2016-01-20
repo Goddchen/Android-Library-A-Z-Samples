@@ -54,4 +54,6 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.0.0-beta3'
     // Ion
     compile 'com.koushikdutta.ion:ion:2.1.6'
+    // Timber
+    compile 'com.jakewharton.timber:timber:4.1.0'
 }

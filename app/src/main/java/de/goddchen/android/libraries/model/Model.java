@@ -16,6 +16,7 @@ import de.goddchen.android.libraries.model.sample.MoshiSample;
 import de.goddchen.android.libraries.model.sample.OttoSample;
 import de.goddchen.android.libraries.model.sample.PicassoSample;
 import de.goddchen.android.libraries.model.sample.RetrofitSample;
+import de.goddchen.android.libraries.model.sample.TimberSample;
 
 /**
  * Created by Goddchen on 25.12.2015.
@@ -35,6 +36,7 @@ public class Model {
         samples.add(new OttoSample());
         samples.add(new RetrofitSample());
         samples.add(new IonSample());
+        samples.add(new TimberSample());
 
         Collections.sort(samples, new Comparator<Sample>() {
             @Override

@@ -9,6 +9,8 @@ import org.acra.collector.CrashReportData;
 import org.acra.sender.ReportSender;
 import org.acra.sender.ReportSenderException;
 
+import timber.log.Timber;
+
 /**
  * Created by Goddchen on 25.12.2015.
  */
@@ -21,6 +23,11 @@ public class Application extends android.app.Application {
     public void onCreate() {
         super.onCreate();
         initACRA();
+        initTimber();
+    }
+
+    private void initTimber() {
+        Timber.plant(new Timber.DebugTree());
     }
 
     private void initACRA() {
