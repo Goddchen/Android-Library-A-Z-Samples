@@ -2,6 +2,8 @@ package de.goddchen.android.libraries;
 
 import android.content.Context;
 
+import com.squareup.leakcanary.LeakCanary;
+
 import org.acra.ACRA;
 import org.acra.ReportingInteractionMode;
 import org.acra.annotation.ReportsCrashes;
@@ -19,11 +21,18 @@ import timber.log.Timber;
         resDialogTitle = R.string.acra_dialog_title)
 public class Application extends android.app.Application {
 
+    public Object leakObject = new Object();
+
     @Override
     public void onCreate() {
         super.onCreate();
         initACRA();
         initTimber();
+        initLeakCanary();
+    }
+
+    private void initLeakCanary() {
+        LeakCanary.install(this);
     }
 
     private void initTimber() {
