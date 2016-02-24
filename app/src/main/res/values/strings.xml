@@ -5,4 +5,5 @@
     <string name="acra_dialog_title">Whoops!</string>
     <string name="push_me">Push me!</string>
     <string name="you_did_it">You did it!</string>
+    <string name="force_leak">Force a leak</string>
 </resources>

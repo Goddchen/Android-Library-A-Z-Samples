@@ -11,10 +11,13 @@ import de.goddchen.android.libraries.model.sample.CommonsIoSample;
 import de.goddchen.android.libraries.model.sample.Dagger2Sample;
 import de.goddchen.android.libraries.model.sample.EventBusSample;
 import de.goddchen.android.libraries.model.sample.GsonSample;
+import de.goddchen.android.libraries.model.sample.IonSample;
+import de.goddchen.android.libraries.model.sample.LeakCanarySample;
 import de.goddchen.android.libraries.model.sample.MoshiSample;
 import de.goddchen.android.libraries.model.sample.OttoSample;
 import de.goddchen.android.libraries.model.sample.PicassoSample;
 import de.goddchen.android.libraries.model.sample.RetrofitSample;
+import de.goddchen.android.libraries.model.sample.TimberSample;
 
 /**
  * Created by Goddchen on 25.12.2015.
@@ -33,6 +36,9 @@ public class Model {
         samples.add(new MoshiSample());
         samples.add(new OttoSample());
         samples.add(new RetrofitSample());
+        samples.add(new IonSample());
+        samples.add(new TimberSample());
+        samples.add(new LeakCanarySample());
 
         Collections.sort(samples, new Comparator<Sample>() {
             @Override
