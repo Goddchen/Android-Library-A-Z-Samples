@@ -17,6 +17,7 @@ import de.goddchen.android.libraries.model.sample.LeakCanarySample;
 import de.goddchen.android.libraries.model.sample.MoshiSample;
 import de.goddchen.android.libraries.model.sample.OttoSample;
 import de.goddchen.android.libraries.model.sample.PicassoSample;
+import de.goddchen.android.libraries.model.sample.QRGenSample;
 import de.goddchen.android.libraries.model.sample.RetrofitSample;
 import de.goddchen.android.libraries.model.sample.TimberSample;
 
@@ -41,6 +42,7 @@ public class Model {
         samples.add(new TimberSample());
         samples.add(new LeakCanarySample());
         samples.add(new KSoap2Sample());
+        samples.add(new QRGenSample());
 
         Collections.sort(samples, new Comparator<Sample>() {
             @Override

@@ -62,4 +62,6 @@ dependencies {
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3.1'
     // ksoap2-android
     compile 'com.google.code.ksoap2-android:ksoap2-android:3.6.0'
+    // QRGen
+    compile 'com.github.kenglxn.QRGen:android:2.1.0'
 }
