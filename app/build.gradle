@@ -24,6 +24,11 @@ android {
     }
 }
 
+configurations {
+    compile.exclude group: 'stax'
+    compile.exclude group: 'xpp3'
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
@@ -64,4 +69,6 @@ dependencies {
     compile 'com.google.code.ksoap2-android:ksoap2-android:3.6.0'
     // QRGen
     compile 'com.github.kenglxn.QRGen:android:2.1.0'
+    // Simple
+    compile 'org.simpleframework:simple-xml:2.7.1'
 }
