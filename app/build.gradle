@@ -74,4 +74,6 @@ dependencies {
     compile 'org.simpleframework:simple-xml:2.7.1'
     // UniveralImageLoader
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    // Wire
+    compile 'com.squareup.wire:wire-runtime:2.1.1'
 }
