@@ -21,6 +21,7 @@ import de.goddchen.android.libraries.model.sample.QRGenSample;
 import de.goddchen.android.libraries.model.sample.RetrofitSample;
 import de.goddchen.android.libraries.model.sample.SimpleSample;
 import de.goddchen.android.libraries.model.sample.TimberSample;
+import de.goddchen.android.libraries.model.sample.UniversalImageLoaderSample;
 
 /**
  * Created by Goddchen on 25.12.2015.
@@ -45,6 +46,7 @@ public class Model {
         samples.add(new KSoap2Sample());
         samples.add(new QRGenSample());
         samples.add(new SimpleSample());
+        samples.add(new UniversalImageLoaderSample());
 
         Collections.sort(samples, new Comparator<Sample>() {
             @Override

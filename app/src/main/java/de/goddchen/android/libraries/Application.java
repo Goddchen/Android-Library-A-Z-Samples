@@ -2,6 +2,9 @@ package de.goddchen.android.libraries;
 
 import android.content.Context;
 
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.squareup.leakcanary.LeakCanary;
 
 import org.acra.ACRA;
@@ -29,6 +32,20 @@ public class Application extends android.app.Application {
         initACRA();
         initTimber();
         initLeakCanary();
+        initUniversalImageLoader();
+    }
+
+    private void initUniversalImageLoader() {
+        ImageLoader.getInstance().init(new ImageLoaderConfiguration.Builder(this)
+                .defaultDisplayImageOptions(new DisplayImageOptions.Builder()
+                        .cacheInMemory(true)
+                        .cacheOnDisk(false)
+                        .showImageOnLoading(android.R.drawable.ic_menu_gallery)
+                        .showImageOnFail(android.R.drawable.ic_menu_close_clear_cancel)
+                        .showImageForEmptyUri(android.R.drawable.ic_menu_gallery)
+                        .build())
+                .memoryCacheSizePercentage(20)
+                .build());
     }
 
     private void initLeakCanary() {
