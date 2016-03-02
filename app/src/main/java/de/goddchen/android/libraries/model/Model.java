@@ -24,6 +24,7 @@ import de.goddchen.android.libraries.model.sample.TimberSample;
 import de.goddchen.android.libraries.model.sample.UniversalImageLoaderSample;
 import de.goddchen.android.libraries.model.sample.VectorDrawableSample;
 import de.goddchen.android.libraries.model.sample.WireSample;
+import de.goddchen.android.libraries.model.sample.ZXingSample;
 
 /**
  * Created by Goddchen on 25.12.2015.
@@ -51,6 +52,7 @@ public class Model {
         samples.add(new UniversalImageLoaderSample());
         samples.add(new VectorDrawableSample());
         samples.add(new WireSample());
+        samples.add(new ZXingSample());
 
         Collections.sort(samples, new Comparator<Sample>() {
             @Override

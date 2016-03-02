@@ -76,4 +76,6 @@ dependencies {
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
     // Wire
     compile 'com.squareup.wire:wire-runtime:2.1.1'
+    // ZXing
+    compile 'com.google.zxing:android-integration:3.2.1'
 }
